@@ -1,0 +1,25 @@
+{
+  "name": "mynote",
+  "version": "1.0.0",
+  "description": "animated and typescripted note's app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only ./src"
+  },
+  "keywords": [
+    "note's",
+    "app",
+    "mynotes",
+    "ts"
+  ],
+  "author": "Breno H P Xavier",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "ts-node-dev": "^2.0.0"
+  }
+}

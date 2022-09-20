@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.1vw;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'title title'
+    'fishes main';
+
+    grid-template-rows: 15vh 70vh;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    padding: 5vw;;
+    width: 90vw;
+    height: 90vh;
+    background-color: #7e3400;
+    background-image: url(https://1.bp.blogspot.com/-qA5bYWoNA64/XPaGH14BwdI/AAAAAAABG-8/rMidYAMx1bMrAqlVhvlChZ0_bVoyZsOjQCLcBGAs/s1600/37.gif);
+}
+
+h1{
+    grid-area: title;
+    color: #ffffff;
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+    font-size: 4vw;
+}
+
+#myNotesTitle{
+    margin: 5vh auto;
+    padding: 0vh 1vw 6vh 1vw;
+    
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 6.5vw;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+
+    animation: title 5s 1;
+}
+
+.imgContainer{
+    grid-area: fishes;
+    width: 40vw;
+    height: 75vh;
+    margin-left: 3vw;
+    animation: fishes ease-in-out 10s infinite;
+    object-fit:cover;
+    transform: translateX(0vw);
+    transition: transform 1s;
+}
+
+.imgContainerActive{
+    grid-area: fishes;
+    width: 40vw;
+    height: 75vh;
+    margin-left: 3vw;
+    animation: fishes ease-in-out 10s infinite;
+    object-fit:cover;
+    transform: translateX(47vw);
+    transition: transform 1s;
+}
+
+@keyframes fishes {
+    0%{
+        filter: brightness(70%)
+    }
+    50%{
+        filter: brightness(135%)
+    }
+    100%{
+        filter: brightness(70%)
+    }
+}
+
+.main{
+    grid-area: main;
+    width: 50vw;
+    /* height: 55vh; */
+    padding: 0vh 10vw;
+    transform: translateX(0vw);
+    transition: transform 1s;
+}
+
+.mainActive{
+    grid-area: main;
+    width: 50vw;
+    /* height: 55vh; */
+    padding: 0vh 10vw;
+    transform: translateX(-40vw);
+    transition: transform 1s;
+}
+
+@keyframes title {
+    0%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    2%{
+        color: #ffffff;
+        text-shadow: 0px 0px 0px #FEEC0F, 0px 0px 0px white, 0px 0px 0px white ;
+    }
+    4%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    8%{
+        color: #ffffff;
+        text-shadow: 0px 0px 0px #FEEC0F, 0px 0px 0px white, 0px 0px 0px white ;
+    }
+    10%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    11%{
+        color: #ffffff;
+        text-shadow: 0px 0px 0px #FEEC0F, 0px 0px 0px white, 0px 0px 0px white ;
+    }
+    13%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    15%{
+        color: #ffffff;
+        text-shadow: 0px 0px 0px #FEEC0F, 0px 0px 0px white, 0px 0px 0px white ;
+    }
+    17%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    20%{
+        color: #ffffff;
+        text-shadow: 0px 0px 0px #FEEC0F, 0px 0px 0px white, 0px 0px 0px white ;
+    }
+    45%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    
+    79%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    82%{
+        color: #ffffff;
+        text-shadow: 0px 0px 0px #FEEC0F, 0px 0px 0px white, 0px 0px 0px white ;
+    }
+    84%{
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    }
+    100%   {
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #FEEC0F, 10px 10px 80px white, -10px -10px 160px white ;
+    } 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;    
+}
